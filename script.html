@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang='en'>
+
+ <head>
+   <link rel='stylesheet' href='style.css'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <meta charset='utf-8'>
+ </head>
+
+ <body>
+
+<h1 id='title'>
+  Ruta Moldova-Germania
+</h1>
+<p id='description'><strong>Fișă de angajare - Șofer</strong></p>
+
+<form id='survey-form'>
+<fieldset>
+<label id='name-label' for='name'>Nume/Prenume: <input id='name' type='text' placeholder='Nume Prenume' required></label>
+</fieldset>
+<fieldset>
+<label id='email-label' for='email'>Email: <input type='email' id='email' placeholder='exemplu123@gmail.com'  required></label>
+</fieldset>
+<fieldset>
+<label id='number-label' for='number'>Vârsta: <input type='number' id='number' min='20' max='55' placeholder='20-55' required></label>
+</fieldset>
+<hr>
+<fieldset>
+<label for='dropdown'>Experiență Deținută:   <select id='dropdown' required><option value=''>Selectează o opțiune</option><option value='option1'>Nou în domeniu</option><option value='option2'>12 luni sau mai puțin</option><option value='option3'>1-4 ani</option><option value='option4'>5-9 ani</option><option value='option5'>10+ ani</option></select>
+</fieldset>
+<hr>
+<fieldset>
+<legend required>Limbi Cunoscute:</legend>
+
+<label for='languages1'><input type='radio' id='languages1' value='romina' name='limba' checked>Limba Română</label>
+
+<label for='languages2'><input type='radio' id='languages2' value='rusa' name='limba'>Limba Rusă</label>
+
+<label for='languages3'><input type='radio' id='language3' value='rusa+romina' name='limba'>Limba Română + Limba Rusă</label>
+</fieldset>
+<hr>
+<fieldset >
+  <legend required>Probleme cu Poliția:</label>
+  <label for='prob1'><input type='radio' name='probleme' value='nu' id='probleme' checked> Nu</label>
+  <label for='prob2'><input type='radio' name='probleme' value='da' id='probleme'> Da</label>
+</fieldset>
+<hr>
+<fieldset>
+  <legend required>Cutia pe care mergeți:</legend>
+ <label for='cutie1'><input type='checkbox' id='cutie1' value='manual' checked>Manuală</label>
+<label for='cutie2'><input type='checkbox' id='cutie2' value='automat'>Automată</label>
+</fieldset>
+<hr>
+<fieldset>
+  <legend>Spuneți mai multe despre dumneavoastră:</legend>
+  <label for='description'><textarea placeholder='Vreau să fiu șofer aici deoarece ...'></textarea>
+</fieldset>
+<hr>
+<fieldset>
+  <input type='submit' id='submit'>
+</fieldset>
+</form>
+ </body>
+</html>
